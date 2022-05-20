@@ -28,6 +28,7 @@ $new_array = [];
                     if(!in_array($numeroRandom, $new_array)){
                         $new_array[] = $numeroRandom;
                     }
+                return $new_array;
             };
         ?>
 

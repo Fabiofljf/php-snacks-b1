@@ -7,10 +7,24 @@ Olimpia Milano - Cantù | 55-60
 <?php
 $partite = [
 
-        "squadraCasa" => "Messina",
-        "puntiCasa" => 20,
-        "squadraOspite" => "Catania",
-        "puntiOspite" => 30,
+        [
+            "squadraCasa" => "Messina",
+            "puntiCasa" => 20,
+            "squadraOspite" => "Catania",
+            "puntiOspite" => 30,
+        ],
+        [
+            "squadraCasa" => "Palermo",
+            "puntiCasa" => 23,
+            "squadraOspite" => "Enna",
+            "puntiOspite" => 22,
+        ],
+        [
+            "squadraCasa" => "Trapani",
+            "puntiCasa" => 40,
+            "squadraOspite" => "Siracusa",
+            "puntiOspite" => 30,
+        ]
 ];
 
 var_dump($partite);
@@ -26,15 +40,18 @@ var_dump($partite);
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        <?php echo $partite['squadraCasa'] ?>
-    </h1>
-    Vs
-    <h1>
-        <?php echo $partite['squadraOspite'] ?>
-    </h1>
-    <h2>
-        Risultato: <?php echo $partite['puntiCasa'] ?> - <?php echo $partite['puntiOspite'] ?>
-    </h2>
+    <div>
+        <h1>Prima partita</h1>
+        <h2>
+            <?php echo $partite['squadraCasa'] ?>
+        </h2>
+        Vs
+        <h2>
+            <?php echo $partite['squadraOspite'] ?>
+        </h2>
+        <h3>
+            Risultato: <?php echo $partite['puntiCasa'] ?> - <?php echo $partite['puntiOspite'] ?>
+        </h3>
+    </div>
 </body>
 </html>

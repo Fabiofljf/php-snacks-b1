@@ -23,18 +23,16 @@ $new_array = [];
         <p>Creo un'array con 15 numeri diversi casuali</p>
 
         <?php 
-            while (count($new_array) < 15) { 
+            while (count($new_array) <= 15) { 
                 $numeroRandom = rand(1, 50);
                     if(!in_array($numeroRandom, $new_array)){
                         $new_array[] = $numeroRandom;
                     }
-                return $new_array;
-            };
+            }
+        var_dump($new_array);
         ?>
 
-        <p>
-            <?php echo $new_array ?>
-        </p>
+        
 
     </body>
 </html>

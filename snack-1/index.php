@@ -29,6 +29,12 @@ $partite = [
 
 var_dump($partite);
 
+for ($i; $i < count($struttura); $i++){
+    $singoloAvvenimento = $struttura[$i];
+}
+
+var_dump($singoloAvvenimento);
+
 ?>
 
 <!DOCTYPE html>

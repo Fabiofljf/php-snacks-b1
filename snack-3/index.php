@@ -60,11 +60,12 @@ var_dump($dates);
 </head>
 <body>
     
-    <ul>
     <?php foreach($posts as $dates) : ?>
-        <?php foreach ($data1 as $key => $value) : ?>
+    <ul <?php $dates ?>>
+        <?php foreach ($dates as $key => $value) : ?>
             <li> <?php $key ?> <?php $value ?> </li>
         <?php endforeach; ?>
+    </ul>
     <?php endforeach; ?>
         
     </ul>

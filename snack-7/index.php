@@ -44,7 +44,7 @@ $classe60 =
     <h1>Classe 60: Nomi, cognomi e media dei voti</h1>
     <?php for ($i = 0; $i < count($classe60); $i++) { ?>
     
-        <p><?php echo $classe60[$i]['nome'] ?> <?php echo $classe60[$i]['cognome'] ?> | <?php echo $classe60[$i]['media'] ?></p>
+        <p><?php echo $classe60[$i]['nome'] ?>, <?php echo $classe60[$i]['cognome'] ?> | <?php echo $classe60[$i]['media'] ?></p>
         
     <?php } ?>
 </body>

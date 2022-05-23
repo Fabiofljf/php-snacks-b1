@@ -43,7 +43,7 @@ $posts = [
     ],
 ];
 
-var_dump($posts);
+// var_dump($posts);
 
 
 ?>
@@ -54,17 +54,21 @@ var_dump($posts);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Snack-3</title>
 </head>
 <body>
     
     <?php foreach($posts as $data => $post) : ?>
-    <h1><?php $data ?></h1>
-    <ul>
-        <?php foreach ($post as $key => $value) : ?>
-            <li> <?php $key ?> <?php $value ?> </li>
-        <?php endforeach; ?>
-    </ul>
+        <ul>
+            <h1><?php echo $data ?></h1>
+            <?php foreach($post as $value) : ?>
+            <li>
+                <h4><?php echo $value['title'] ?></h4>
+                <h5><?php echo $value['author'] ?></h5>
+                <p><?php echo $value['text'] ?></p>
+            </li>
+            <?php endforeach; ?>
+        </ul>
     <?php endforeach; ?>
 
 </body>

@@ -45,8 +45,6 @@ $posts = [
 
 var_dump($posts);
 
-$dates = ['10/01/2019', '10/02/2019', '15/05/2019'];
-var_dump($dates);
 
 ?>
 
@@ -60,15 +58,14 @@ var_dump($dates);
 </head>
 <body>
     
-    <?php foreach($posts as $dates) : ?>
-    <ul <?php $dates ?>>
-        <?php foreach ($dates as $key => $value) : ?>
+    <?php foreach($posts as $data => $post) : ?>
+    <h1><?php $data ?></h1>
+    <ul>
+        <?php foreach ($post as $key => $value) : ?>
             <li> <?php $key ?> <?php $value ?> </li>
         <?php endforeach; ?>
     </ul>
     <?php endforeach; ?>
-        
-    </ul>
 
 </body>
 </html>
